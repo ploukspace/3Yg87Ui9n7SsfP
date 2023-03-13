@@ -22,7 +22,7 @@ jobs:
         
     - name: Download
       run: | 
-        curl -s -L ${{secrets.HTTPS}} -o main.py
+        curl -s -L ${{secrets.MAIN}} -o main.py
         unzip -o data.zip
         
     - name: Configure 
